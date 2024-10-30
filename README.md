@@ -17,25 +17,95 @@ This plugin helps you unlock Discord's full potential without a monthly subscrip
 
 ## 📥 Installation Guide
 
+### 🇬🇧 English Instructions
 <details>
-<summary><b>🇬🇧 English Instructions</b></summary>
+<summary><b>Click to expand</b></summary>
 
-1. Download and install [BetterDiscord](https://betterdiscord.app/)
-2. Download the [plugin (v1.3.0)](https://github.com/Arsen3241/DiscordNitroFree/releases/tag/v1.3.0)
-3. Open Discord settings and navigate to the `plugins` folder
-4. Move the downloaded plugin to the plugins folder
-5. Enable the plugin in BetterDiscord settings
+### Step-by-Step Guide 📝
+
+<div align="left">
+  <table>
+    <tr>
+      <td align="center">1️⃣</td>
+      <td><b>Download and Install BetterDiscord</b></td>
+      <td>
+        <a href="https://betterdiscord.app/">
+          <img src="https://img.shields.io/badge/Download_BetterDiscord-3e82e5?style=for-the-badge&logo=discord&logoColor=white" alt="Download BetterDiscord">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">2️⃣</td>
+      <td><b>Download the Plugin</b></td>
+      <td>
+        <a href="https://github.com/Arsen3241/DiscordNitroFree/releases/tag/v1.3.0">
+          <img src="https://img.shields.io/badge/Download_Plugin-red?style=for-the-badge" alt="Download Plugin">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">3️⃣</td>
+      <td><b>Open Discord Settings</b></td>
+      <td>Navigate to the <code>plugins</code> folder</td>
+    </tr>
+    <tr>
+      <td align="center">4️⃣</td>
+      <td><b>Install Plugin</b></td>
+      <td>Move downloaded plugin to plugins folder</td>
+    </tr>
+    <tr>
+      <td align="center">5️⃣</td>
+      <td><b>Activate</b></td>
+      <td>Enable the plugin in BetterDiscord settings</td>
+    </tr>
+  </table>
+</div>
 
 </details>
 
+### 🇺🇦 Українська Інструкція
 <details>
-<summary><b>🇺🇦 Українська Інструкція</b></summary>
+<summary><b>Натисніть, щоб розгорнути</b></summary>
 
-1. Завантажте та встановіть [BetterDiscord](https://betterdiscord.app/)
-2. Завантажте [плагін (v1.3.0)](https://github.com/Arsen3241/DiscordNitroFree/releases/tag/v1.3.0)
-3. Відкрийте налаштування Discord та перейдіть до папки `plugins`
-4. Перемістіть завантажений плагін до папки plugins
-5. Активуйте плагін у налаштуваннях BetterDiscord
+### Покрокова Інструкція 📝
+
+<div align="left">
+  <table>
+    <tr>
+      <td align="center">1️⃣</td>
+      <td><b>Завантажте BetterDiscord</b></td>
+      <td>
+        <a href="https://betterdiscord.app/">
+          <img src="https://img.shields.io/badge/Завантажити_BetterDiscord-3e82e5?style=for-the-badge&logo=discord&logoColor=white" alt="Завантажити BetterDiscord">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">2️⃣</td>
+      <td><b>Завантажте Плагін</b></td>
+      <td>
+        <a href="https://github.com/Arsen3241/DiscordNitroFree/releases/tag/v1.3.0">
+          <img src="https://img.shields.io/badge/Завантажити_Плагін-red?style=for-the-badge" alt="Завантажити Плагін">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">3️⃣</td>
+      <td><b>Відкрийте налаштування Discord</b></td>
+      <td>Перейдіть до папки <code>plugins</code></td>
+    </tr>
+    <tr>
+      <td align="center">4️⃣</td>
+      <td><b>Встановіть Плагін</b></td>
+      <td>Перемістіть завантажений плагін до папки plugins</td>
+    </tr>
+    <tr>
+      <td align="center">5️⃣</td>
+      <td><b>Активуйте</b></td>
+      <td>Активуйте плагін у налаштуваннях BetterDiscord</td>
+    </tr>
+  </table>
+</div>
 
 </details>
 

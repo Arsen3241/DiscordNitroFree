@@ -21,7 +21,7 @@ If you happen to decide to support then my MONO jar below, it would be appreciat
     </div>
     <div>
         <p>&bull; <span style="font-size: 1.2em; margin-right: 2px;"> Після чого завантажуємо плагін</span>
-        <a href=""><IMG src="https://img.shields.io/badge/Plugins-v1.3.0-red"></a> </p>
+        <a href="https://github.com/Arsen3241/DiscordNitroFree/releases/tag/v1.3.0"><IMG src="https://img.shields.io/badge/Plugins-v1.3.0-red"></a> </p>
     </div>
         <p>&bull; <span style="font-size: 1.2em; margin-right: 2px;">І відкриваємо в папку</span> <span style="display: inline-block; background-color: #2d2d2d; color: #ffffff; padding: 2px 6px; border-radius: 5px; font-family: Consolas, monospace;">plugins</span> <span style="font-size: 1.2em; margin-right: 2px;">в налаштуваннях Діскорда
         <p>&bull; <span style="font-size: 1.2em; margin-right: 2px;">Після чого закидуємо в відкрившуюся папку завантажиний плагін \ активуємо плагін якщо потрібно </span></p>
@@ -37,7 +37,7 @@ If you happen to decide to support then my MONO jar below, it would be appreciat
       </div>
      <div>
         <p>&bull; <span style="font-size: 1.2em; margin-right: 2px;"> Then download the plugin</span>
-        <a href=""><IMG src="https://img.shields.io/badge/Plugins-v1.3.0-red"></a> </p>
+        <a href="https://github.com/Arsen3241/DiscordNitroFree/releases/tag/v1.3.0"><IMG src="https://img.shields.io/badge/Plugins-v1.3.0-red"></a> </p>
      </div>
       <p>&bull; <span style="font-size: 1.2em; margin-right: 2px;">And open in the folder</span> <span style="display: inline-block; background-color: #2d2d2d; color: #ffffff; padding: 2px 6px; border-radius: 5px; font-family: Consolas, monospace;">plugins</span> <span style="font-size: 1.2em; margin-right: 2px;">in the Discord settings
       <p>&bull; <span style="font-size: 1.2em; margin-right: 2px;">Then we throw the downloaded plugin into the opened folder \ activate the plugin if necessaryactivate the plugin if necessary</span></p>

@@ -3,6 +3,8 @@
  * @version 1.3.1
  * @description Enhanced Discord Nitro Experience
  * @author Arseniy
+ * @source https://github.com/Arsen3241/DiscordNitroFree
+ * @updateUrl https://raw.githubusercontent.com/Arsen3241/DiscordNitroFree/refs/heads/main/DiscordNitro1.3.1.plugin.js
  */
 
 "use strict";

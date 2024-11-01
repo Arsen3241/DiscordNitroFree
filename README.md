@@ -3,7 +3,7 @@
 # Discord Premium Features Plugin 🌟
 
 [![BetterDiscord](https://img.shields.io/badge/BetterDiscord-3e82e5?style=for-the-badge&logo=discord&logoColor=white)](https://betterdiscord.app/)
-[![Version](https://img.shields.io/badge/Version-1.3.1-red?style=for-the-badge)](https://github.com/Arsen3241/DiscordNitroFree/releases/tag/v1.3.0)
+[![Version](https://img.shields.io/badge/Version-1.3.1-red?style=for-the-badge)](https://github.com/Arsen3241/DiscordNitroFree/releases)
 [![Stars](https://img.shields.io/badge/Stars-⭐️_If_You_Like_It!-yellow?style=for-the-badge)](https://github.com/Arsen3241/DiscordNitroFree)
 
 Enhance your Discord experience with premium features! 🚀
@@ -38,7 +38,7 @@ This plugin helps you unlock Discord's full potential without a monthly subscrip
       <td align="center">2️⃣</td>
       <td><b>Download the Plugin</b></td>
       <td>
-        <a href="https://github.com/Arsen3241/DiscordNitroFree/releases/tag/v1.3.0">
+        <a href="https://github.com/Arsen3241/DiscordNitroFree/releases">
           <img src="https://img.shields.io/badge/Download_Plugin-red?style=for-the-badge" alt="Download Plugin">
         </a>
       </td>
@@ -84,7 +84,7 @@ This plugin helps you unlock Discord's full potential without a monthly subscrip
       <td align="center">2️⃣</td>
       <td><b>Завантажте Плагін</b></td>
       <td>
-        <a href="https://github.com/Arsen3241/DiscordNitroFree/releases/tag/v1.3.0">
+        <a href="https://github.com/Arsen3241/DiscordNitroFree/releases">
           <img src="https://img.shields.io/badge/Завантажити_Плагін-red?style=for-the-badge" alt="Завантажити Плагін">
         </a>
       </td>

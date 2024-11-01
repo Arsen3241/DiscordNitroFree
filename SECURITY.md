@@ -9,6 +9,7 @@ We support and maintain the latest version of this plugin. Users are encouraged 
 | Version       | Supported          |
 | ------------- | ------------------ |
 | 1.3.1         | :white_check_mark: |
+| 1.3.0         | :x:                |
 
 Ми підтримуємо і обслуговуємо останню версію цього плагіна. Користувачам рекомендується оновлюватися до останнього випуску для підвищення безпеки та функціональності.
 
@@ -39,7 +40,7 @@ If you discover a security vulnerability within this plugin, please report it by
 3. **Dependency Management**: External libraries or dependencies are kept to a minimum. Only trusted and widely used libraries are included, and they are regularly updated to mitigate security risks.
 4. **Regular Updates**: Updates are provided as necessary to address any newly discovered vulnerabilities or improve functionality.
 5. **Code Transparency**: The plugin source code is open and accessible, allowing users to inspect it and confirm its safety before use.
-
+---
 1. **Захист даних**: Плагін не зберігає дані користувачів на постійній основі. Всі дані обробляються в пам’яті, і конфіденційні дані не записуються на диск або зовнішні сервери.
 2. **Мінімальні дозволи**: Плагін запитує тільки мінімально необхідні дозволи для своєї роботи. Користувачам рекомендується переглядати та обмежувати дозволи, якщо це можливо.
 3. **Управління залежностями**: Зовнішні бібліотеки або залежності зведені до мінімуму. Використовуються лише надійні та широко застосовувані бібліотеки, які регулярно оновлюються для зниження ризиків.
@@ -57,7 +58,7 @@ If you discover a security vulnerability within this plugin, please report it by
 - **Not Liable for Data or Financial Loss**: The developer is not liable for any loss of data, loss of financial assets, or other damages, direct or indirect, that may occur as a result of using this plugin.
 - **Use of Unofficial Software**: This is an unofficial plugin and may be in violation of the official service’s terms of service. The developer provides no guarantees regarding continued functionality or account status while using the plugin.
 - **Independent Review Recommended**: Users are encouraged to review the source code and evaluate the security risks independently, particularly if they intend to use it in sensitive environments. This disclaimer expressly denies all liability for any action taken as a result of the use of this plugin.
-
+---
 - **Користувач бере на себе всі ризики**: Плагін надається виключно на основі "як є" без жодних гарантій або поручительств, явних або неявних. Встановлюючи, завантажуючи або використовуючи цей плагін, користувачі визнають, що вони повністю несуть відповідальність за всі можливі наслідки.
 - **Відсутність відповідальності за дії щодо облікового запису**: Використання цього плагіна може суперечити Умовам обслуговування або іншим політикам сторонніх сервісів, таких як Discord. Розробник не несе відповідальності за призупинення, припинення чи інші дії, які можуть бути вжиті Discord або будь-якими іншими третіми сторонами щодо користувачів, які вирішили використовувати цей плагін.
 - **Відсутність гарантій безпеки**: Розробник не заявляє і не гарантує, що цей плагін не має вразливостей або що він повністю захищений від шкідливої активності. Користувачам рекомендується самостійно оцінити ризики.

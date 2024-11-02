@@ -3,7 +3,7 @@
 # Discord Premium Features Plugin 🌟
 
 [![BetterDiscord](https://img.shields.io/badge/BetterDiscord-3e82e5?style=for-the-badge&logo=discord&logoColor=white)](https://betterdiscord.app/)
-[![Version](https://img.shields.io/badge/Version-1.3.1-red?style=for-the-badge)](https://github.com/Arsen3241/DiscordNitroFree/releases)
+[![Version](https://img.shields.io/badge/Version-1.3.2-red?style=for-the-badge)](https://github.com/Arsen3241/DiscordNitroFree/releases)
 [![Stars](https://img.shields.io/badge/Stars-⭐️_If_You_Like_It!-yellow?style=for-the-badge)](https://github.com/Arsen3241/DiscordNitroFree)
 
 Enhance your Discord experience with premium features! 🚀

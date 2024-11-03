@@ -7,8 +7,9 @@
 We support and maintain the latest version of this plugin. Users are encouraged to update to the latest release for improved security and functionality.
 
 | Version       | Supported          |
-| ------------- | ------------------ |
-| 1.3.1         | :white_check_mark: |
+| ------------- |--------------------|
+| 1.3.2         | :white_check_mark: |
+| 1.3.1         | :x:                |
 | 1.3.0         | :x:                |
 
 Ми підтримуємо і обслуговуємо останню версію цього плагіна. Користувачам рекомендується оновлюватися до останнього випуску для підвищення безпеки та функціональності.

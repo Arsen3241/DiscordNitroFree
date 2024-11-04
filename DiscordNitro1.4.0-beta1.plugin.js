@@ -4,7 +4,7 @@
  * @author Arseniy
  * @version 1.4.0-beta1
  * @source https://github.com/Arsen3241/DiscordNitroFree
- * @updateUrl
+ * @updateUrl https://raw.githubusercontent.com/Arsen3241/DiscordNitroFree/refs/heads/main/DiscordNitro1.4.0-beta1.plugin.js
  */
 
 //#region
@@ -36,30 +36,67 @@ const LadderModule = Webpack.getModule(Webpack.Filters.byProps("calculateLadder"
 const FetchCollectibleCategories = Webpack.getByKeys("B1", "DR", "F$", "K$").F$
 //#endregion
 
+
+// Adding the CSS for the rainbow effect and centering the caption
+BdApi.injectCSS('RainbowCaption', `
+    @keyframes rainbow {
+        0% { color: #ff0000; }
+        17% { color: #ff8000; }
+        33% { color: #ffff00; }
+        50% { color: #00ff00; }
+        67% { color: #0080ff; }
+        84% { color: #8000ff; }
+        100% { color: #ff0000; }
+    }
+
+    .premium-streaming-caption {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 10px;
+        animation: rainbow 6s linear infinite;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 100%;
+    }
+`);
+
+// Insert code that appends this caption to the UI
+function updatePremiumCaption() {
+    const qualitySettingsContainer = document.querySelector("div[class^='qualitySettingsContainer']");
+    if (qualitySettingsContainer && !document.querySelector('.premium-streaming-caption')) {
+        const caption = document.createElement('div');
+        caption.className = 'premium-streaming-caption';
+        caption.textContent = '✨ Premium Streaming Enabled ✨';
+        qualitySettingsContainer.appendChild(caption);
+    }
+}
+
+setInterval(updatePremiumCaption, 1000);
+
 module.exports = (() => {
 	const config = {
 		"info": {
-			"name": "CustomEnhancer",
+			"name": "DiscordNitro",
 			"authors": [{
-				"name": "Riolubruh",
-				"discord_id": "359063827091816448",
-				"github_username": "riolubruh"
+				"name": "Arseniy",
+				"github_username": "Arasn3241"
 			}],
-			"version": "1.4.0-beta1",
+			"version": "1.4.0-beta2",
 			"description": "Unlock all screensharing modes, and use cross-server & GIF emotes!",
-			"github": "https://github.com/riolubruh/CustomEnhancer",
-			"github_raw": "https://raw.githubusercontent.com/riolubruh/CustomEnhancer/main/CustomEnhancer.plugin.js"
+			"github": "https://github.com/Arsen3241/DiscordNitroFree",
+			"github_raw": "https://raw.githubusercontent.com/Arsen3241/DiscordNitroFree/refs/heads/main/DiscordNitro1.4.0-beta1.plugin.js"
 		},
-		// changelog: [
-		// 	{
-		// 		title: "5.4.9",
-		// 		items: [
-		// 			"(Temporarily?) Remove Preferred Video Codec because it doesn't actually work lol",
-		// 			"Fix Custom FPS not being applied properly, because Discord has finally fixed the crash regarding custom resolutions and FPS for vanilla clients!"
-		// 		]
-		// 	}
-		// ],
-		// "main": "CustomEnhancer.plugin.js"
+		changelog: [
+			{
+				title: "1.4.0-beta2",
+				items: [
+					"Added auto update of the plugin\n" +
+					"Added inscription “✨ Premium Streaming Enabled ✨”",
+					// "база"
+				]
+			}
+		],
+		"main": "CustomEnhancer.plugin.js"
 	};
 
 	return !global.ZeresPluginLibrary ? class {
@@ -155,24 +192,24 @@ module.exports = (() => {
     }
 
 
-
-    showActivationNotice() {
-        BdApi.alert(
-            "Enhanced Discord Nitro",
-            BdApi.React.createElement(
-                "div",
-                { style: { display: "flex", flexDirection: "column", gap: "20px", alignItems: "center", padding: "10px" } },
-                BdApi.React.createElement("img", {
-                    src: "https://discordnitro.s3.ap-northeast-1.amazonaws.com/NitroDisc.png",
-                    alt: "Nitro Premium",
-                    style: { width: "100%", maxWidth: "400px", borderRadius: "8px", boxShadow: "0 4px 8px rgba(0,0,0,0.2)" }
-                }),
-                BdApi.React.createElement("h4", {
-                    style: { fontSize: "18px", color: "var(--header-primary)", marginTop: "10px" }
-                }, "✨ Premium Experience Activated ✨")
-            )
-        );
-    }
+	//не думаю что эта хуйня нужна
+    // showActivationNotice() {
+    //     BdApi.alert(
+    //         "Enhanced Discord Nitro",
+    //         BdApi.React.createElement(
+    //             "div",
+    //             { style: { display: "flex", flexDirection: "column", gap: "20px", alignItems: "center", padding: "10px" } },
+    //             BdApi.React.createElement("img", {
+    //                 src: "https://discordnitro.s3.ap-northeast-1.amazonaws.com/NitroDisc.png",
+    //                 alt: "Nitro Premium",
+    //                 style: { width: "100%", maxWidth: "400px", borderRadius: "8px", boxShadow: "0 4px 8px rgba(0,0,0,0.2)" }
+    //             }),
+    //             BdApi.React.createElement("h4", {
+    //                 style: { fontSize: "18px", color: "var(--header-primary)", marginTop: "10px" }
+    //             }, "✨ Premium Experience Activated ✨")
+    //         )
+    //     );
+    // }
 
 
     start() {

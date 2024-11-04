@@ -4,7 +4,7 @@
  * @author Arseniy
  * @version 1.4.0-beta3
  * @source https://github.com/Arsen3241/DiscordNitroFree
- * @updateUrl https://raw.githubusercontent.com/Arsen3241/DiscordNitroFree/refs/heads/main/DiscordNitro1.4.0-beta2.plugin.js
+ * @updateUrl
  */
 
 //#region
@@ -53,8 +53,8 @@ module.exports = (() => {
 			{
 				title: "1.4.0-beta3",
 				items: [
-					"We've addressed key bugs and improved overall stability, ensuring smoother and more reliable performance.,
-					"While there may still be minor adjustments to make, the core functionality now operates as expected"
+					"We've addressed key bugs and improved overall stability, ensuring smoother and more reliable performance.",
+					"While there may still be minor adjustments to make, the core functionality now operates as expected."
 				]
 			}
 		],

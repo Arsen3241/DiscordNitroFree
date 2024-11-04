@@ -2,9 +2,9 @@
  * @name DiscordNitro
  * @description Full enjoyment of the benefits of Discord Nitro
  * @author Arseniy
- * @version 1.4.0-beta1
+ * @version 1.4.0-beta3
  * @source https://github.com/Arsen3241/DiscordNitroFree
- * @updateUrl https://raw.githubusercontent.com/Arsen3241/DiscordNitroFree/refs/heads/main/DiscordNitro1.4.0-beta1.plugin.js
+ * @updateUrl https://raw.githubusercontent.com/Arsen3241/DiscordNitroFree/refs/heads/main/DiscordNitro1.4.0-beta2.plugin.js
  */
 
 //#region
@@ -36,63 +36,25 @@ const LadderModule = Webpack.getModule(Webpack.Filters.byProps("calculateLadder"
 const FetchCollectibleCategories = Webpack.getByKeys("B1", "DR", "F$", "K$").F$
 //#endregion
 
-
-// Adding the CSS for the rainbow effect and centering the caption
-BdApi.injectCSS('RainbowCaption', `
-    @keyframes rainbow {
-        0% { color: #ff0000; }
-        17% { color: #ff8000; }
-        33% { color: #ffff00; }
-        50% { color: #00ff00; }
-        67% { color: #0080ff; }
-        84% { color: #8000ff; }
-        100% { color: #ff0000; }
-    }
-
-    .premium-streaming-caption {
-        font-size: 16px;
-        font-weight: bold;
-        margin-top: 10px;
-        animation: rainbow 6s linear infinite;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        text-align: center;
-        width: 100%;
-    }
-`);
-
-// Insert code that appends this caption to the UI
-function updatePremiumCaption() {
-    const qualitySettingsContainer = document.querySelector("div[class^='qualitySettingsContainer']");
-    if (qualitySettingsContainer && !document.querySelector('.premium-streaming-caption')) {
-        const caption = document.createElement('div');
-        caption.className = 'premium-streaming-caption';
-        caption.textContent = '✨ Premium Streaming Enabled ✨';
-        qualitySettingsContainer.appendChild(caption);
-    }
-}
-
-setInterval(updatePremiumCaption, 1000);
-
 module.exports = (() => {
 	const config = {
 		"info": {
 			"name": "DiscordNitro",
 			"authors": [{
 				"name": "Arseniy",
-				"github_username": "Arasn3241"
+				"github_username": "Arsen3241"
 			}],
-			"version": "1.4.0-beta2",
-			"description": "Unlock all screensharing modes, and use cross-server & GIF emotes!",
+			"version": "1.4.0-beta3",
+			"description": "Unlock all screen sharing modes and use cross-server and GIF emotes!",
 			"github": "https://github.com/Arsen3241/DiscordNitroFree",
 			"github_raw": "https://raw.githubusercontent.com/Arsen3241/DiscordNitroFree/refs/heads/main/DiscordNitro1.4.0-beta1.plugin.js"
 		},
 		changelog: [
 			{
-				title: "1.4.0-beta2",
+				title: "1.4.0-beta3",
 				items: [
-					"Added auto update of the plugin\n" +
-					"Added inscription “✨ Premium Streaming Enabled ✨”",
-					// "база"
+					"We've addressed key bugs and improved overall stability, ensuring smoother and more reliable performance.,
+					"While there may still be minor adjustments to make, the core functionality now operates as expected"
 				]
 			}
 		],
@@ -129,89 +91,6 @@ module.exports = (() => {
 			});
 		}
 
-
-    injectStyles() {
-        const css = `
-    @keyframes rainbow {
-        0% { color: #ff0000; }
-        17% { color: #ff8000; }
-        33% { color: #ffff00; }
-        50% { color: #00ff00; }
-        67% { color: #0080ff; }
-        84% { color: #8000ff; }
-        100% { color: #ff0000; }
-    }
-
-    .nitro-status {
-        padding: 5px 10px;
-        border-radius: 4px;
-        background: linear-gradient(45deg, #0073e6, #00c3ff);
-        color: white;
-        font-weight: bold;
-        margin-right: 10px;
-        cursor: default;
-        user-select: none;
-    }
-
-    .premium-streaming-caption {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-size: 16px;
-        font-weight: bold;
-        margin-top: 10px;
-        margin-bottom: 5px;
-        animation: rainbow 6s linear infinite;
-        text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    }
-`;
-        BdApi.injectCSS('DiscordNitroStyles', css);
-    }
-
-
-
-    updateUI() {
-        const statusBar = document.querySelector("div[class*='typeWindows-']");
-        if (statusBar && !document.querySelector('.nitro-status')) {
-            const status = document.createElement('div');
-            status.className = 'nitro-status';
-            status.textContent = '⚡ NITRO';
-            status.title = 'Discord Nitro Active';
-            statusBar.insertBefore(status, statusBar.firstChild);
-        }
-
-        const qualitySettingsContainer = document.querySelector("div[class^='qualitySettingsContainer']");
-        if (qualitySettingsContainer && !document.querySelector('.premium-streaming-caption')) {
-            const caption = document.createElement('div');
-            caption.className = 'premium-streaming-caption';
-            caption.textContent = '✨ Premium Streaming Enabled ✨';
-            qualitySettingsContainer.appendChild(caption);
-        }
-    }
-
-
-	//не думаю что эта хуйня нужна
-    // showActivationNotice() {
-    //     BdApi.alert(
-    //         "Enhanced Discord Nitro",
-    //         BdApi.React.createElement(
-    //             "div",
-    //             { style: { display: "flex", flexDirection: "column", gap: "20px", alignItems: "center", padding: "10px" } },
-    //             BdApi.React.createElement("img", {
-    //                 src: "https://discordnitro.s3.ap-northeast-1.amazonaws.com/NitroDisc.png",
-    //                 alt: "Nitro Premium",
-    //                 style: { width: "100%", maxWidth: "400px", borderRadius: "8px", boxShadow: "0 4px 8px rgba(0,0,0,0.2)" }
-    //             }),
-    //             BdApi.React.createElement("h4", {
-    //                 style: { fontSize: "18px", color: "var(--header-primary)", marginTop: "10px" }
-    //             }, "✨ Premium Experience Activated ✨")
-    //         )
-    //     );
-    // }
-
-
     start() {
         this.injectStyles();
         this.showActivationNotice();
@@ -232,7 +111,7 @@ module.exports = (() => {
 
 			return class CustomEnhancer extends Plugin {
 				defaultSettings = {
-					"emojiSize": 64,
+					"emojiSize": 158,
 					"screenSharing": true,
 					"emojiBypass": true,
 					"ghostMode": false,
@@ -245,10 +124,10 @@ module.exports = (() => {
 					"ResolutionEnabled": false,
 					"CustomResolution": 1440,
 					"CustomBitrateEnabled": false,
-					"minBitrate": -1,
-					"maxBitrate": -1,
-					"targetBitrate": -1,
-					"voiceBitrate": 128,
+					"minBitrate": 10000,
+					"maxBitrate": 40000,
+					"targetBitrate": 35000,
+					"voiceBitrate": 256,
 					"ResolutionSwapper": false,
 					"stickerBypass": false,
 					"profileV2": false,
@@ -264,7 +143,6 @@ module.exports = (() => {
 					"fakeAvatarDecorations": true,
 					"unlockAppIcons": false,
 					"profileEffects": true,
-					"killProfileEffects": false,
 					"avatarDecorations": {},
 					"customPFPs": true,
 					"experiments": false,
@@ -309,15 +187,8 @@ module.exports = (() => {
 								value => {
 									value = parseFloat(value);
 									this.settings.voiceBitrate = value;
-								})/* ,
-							new Settings.Dropdown("Preferred Video Codec", "Changes the screen share video codec to the one set.", this.settings.videoCodec, [
-								{ label: "Default/Disabled", value: 0 },
-								{ label: "H.265", value: 1 },
-								{ label: "H.264", value: 2 },
-								{ label: "AV1", value: 3 },
-								{ label: "VP8", value: 4 },
-								{ label: "VP9", value: 5 }], value => this.settings.videoCodec = value, { searchable: true }
-							) */
+								}) ,
+
 						]),
 						new Settings.SettingGroup("Emojis").append(
 							new Settings.Switch("Nitro Emotes Bypass", "Enable or disable using the emoji bypass.", this.settings.emojiBypass, value => this.settings.emojiBypass = value),
@@ -356,7 +227,6 @@ module.exports = (() => {
 							new Settings.Switch("UserBG Integration", "Downloads and parses the UserBG JSON database so that UserBG banners will appear for you.", this.settings.userBgIntegration, value => this.settings.userBgIntegration = value),
 							new Settings.Switch("Fake Avatar Decorations", "Uses invisible 3y3 encoding to allow setting avatar decorations by hiding information in your bio and/or your custom status.", this.settings.fakeAvatarDecorations, value => this.settings.fakeAvatarDecorations = value),
 							new Settings.Switch("Fake Profile Effects", "Uses invisible 3y3 encoding to allow setting profile effects by hiding information in your bio.", this.settings.profileEffects, value => this.settings.profileEffects = value),
-							new Settings.Switch("Kill Profile Effects", "Hate profile effects? Enable this and they'll be gone. All of them. Overrides all profile effects.", this.settings.killProfileEffects, value => this.settings.killProfileEffects = value),
 							new Settings.Switch("Fake Profile Pictures", "Uses invisible 3y3 encoding to allow setting custom profile pictures by hiding an image URL IN YOUR CUSTOM STATUS. Only supports Imgur URLs for security reasons.", this.settings.customPFPs, value => this.settings.customPFPs = value),
 							new Settings.Switch("UserPFP Integration", "Imports the UserPFP database so that people who have profile pictures in the UserPFP database will appear with their UserPFP profile picture. There's little reason to disable this.", this.settings.userPfpIntegration, value => this.settings.userPfpIntegration = value)
 						),
@@ -2175,7 +2045,7 @@ module.exports = (() => {
 						ret.props.children.props.children.push( //append copy colors 3y3 button
 							BdApi.React.createElement("button", {
 								id: "copy3y3button",
-								children: "Copy Colors 3y3",
+								children: "Copy Colors",
 								className: `${buttonClassModule.button} ${buttonClassModule.lookFilled} ${buttonClassModule.colorBrand} ${buttonClassModule.sizeSmall} ${buttonClassModule.grow}`,
 								style: {
 									marginLeft: "10px",

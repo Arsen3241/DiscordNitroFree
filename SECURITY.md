@@ -8,7 +8,8 @@ We support and maintain the latest version of this plugin. Users are encouraged 
 
 | Version     | Supported          |
 |-------------|--------------------|
-| 1.4.0-beta2 | :warning:          |
+| 1.4.0-beta3 | :warning:          |
+| 1.4.0-beta2 | :x:                |
 | 1.4.0-beta1 | :x:                |
 | 1.3.2       | :white_check_mark: |
 | 1.3.1       | :x:                |
